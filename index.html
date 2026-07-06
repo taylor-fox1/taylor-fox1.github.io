@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>fox // Taylor — Cybersecurity &amp; Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">taylor<span>@fox</span></div>
+    <ul>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> STATUS: OPEN TO WORK</div>
+    <h1>Taylor <span class="accent">"fox"</span></h1>
+    <p class="role">Cybersecurity &amp; Computer Science graduate (Eastern Oregon University) — networking, systems automation, and applied security. Currently pursuing the DoD Cyber Apprenticeship Program.</p>
+    <div class="terminal">
+      <div><span class="prompt">tfox@fedora</span> $ whoami</div>
+      <div class="out">building things that connect: networks, security controls, and the automation between them.<span class="caret"></span></div>
+    </div>
+
+    <div class="nodemap">
+      <svg viewBox="0 0 860 130" xmlns="http://www.w3.org/2000/svg">
+        <line x1="90" y1="65" x2="280" y2="65" class="node-line live"/>
+        <line x1="280" y1="65" x2="470" y2="30" class="node-line live"/>
+        <line x1="280" y1="65" x2="470" y2="100" class="node-line live"/>
+        <line x1="470" y1="30" x2="660" y2="65" class="node-line"/>
+        <line x1="470" y1="100" x2="660" y2="65" class="node-line"/>
+        <line x1="660" y1="65" x2="800" y2="65" class="node-line live"/>
+        <circle cx="90" cy="65" r="7" class="node-dot on"/>
+        <text x="90" y="90" text-anchor="middle" class="node-label active">workstation</text>
+        <circle cx="280" cy="65" r="7" class="node-dot on"/>
+        <text x="280" y="90" text-anchor="middle" class="node-label active">cloudflare tunnel</text>
+        <circle cx="470" cy="30" r="6" class="node-dot"/>
+        <text x="470" y="17" text-anchor="middle" class="node-label">n8n server</text>
+        <circle cx="470" cy="100" r="6" class="node-dot"/>
+        <text x="470" y="122" text-anchor="middle" class="node-label">onedrive</text>
+        <circle cx="660" cy="65" r="6" class="node-dot"/>
+        <text x="660" y="90" text-anchor="middle" class="node-label">home server</text>
+        <circle cx="800" cy="65" r="7" class="node-dot on"/>
+        <text x="800" y="90" text-anchor="middle" class="node-label active">employer</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">01</span><h2>skills.conf</h2></div>
+    <div class="config">
+      <div class="line"><span class="comment"># security</span></div>
+      <div class="line"><span class="key">vuln_assessment</span>=<span class="val">Nessus, structured scan &amp; reporting</span></div>
+      <div class="line"><span class="key">identity_access</span>=<span class="val">MFA, Conditional Access, Entra ID</span></div>
+      <div class="line"><span class="key">cloud_security</span>=<span class="val">Microsoft Defender for Cloud, Sentinel</span></div>
+      <div class="line"><span class="key">research</span>=<span class="val">MFA design, common attack vectors (APA-format)</span></div>
+      <br>
+      <div class="line"><span class="comment"># networking</span></div>
+      <div class="line"><span class="key">hardware</span>=<span class="val">Juniper switches &amp; firewalls, enterprise LAN</span></div>
+      <div class="line"><span class="key">infra</span>=<span class="val">DNS delegation, reverse proxy, tunneling</span></div>
+      <br>
+      <div class="line"><span class="comment"># automation / cloud</span></div>
+      <div class="line"><span class="key">platforms</span>=<span class="val">n8n, AWS EKS, Azure AKS, ACR, GitHub Actions</span></div>
+      <div class="line"><span class="key">scripting</span>=<span class="val">Python, Linux (Fedora/KDE), Docker</span></div>
+      <div class="line"><span class="key">in_progress</span>=<span class="val">Security+ / cloud security certifications</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">02</span><h2>projects</h2></div>
+
+    <div class="project">
+      <div class="project-head">
+        <a class="project-title-link" href="projects/homelab-automation.html">Home Lab Automation Platform</a>
+        <span class="status progress">in progress</span>
+      </div>
+      <p>Self-hosted automation server exposed securely to the internet without opening inbound ports, integrated with OneDrive/Outlook and an AI assistant via a custom MCP bridge.</p>
+      <div class="stack"><span>n8n</span><span>Cloudflare Tunnel</span><span>OAuth2</span><span>MCP</span></div>
+      <a class="read-more" href="projects/homelab-automation.html">view project →</a>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <a class="project-title-link" href="projects/network-infrastructure.html">Enterprise Network Infrastructure — EOU</a>
+        <span class="status done">completed</span>
+      </div>
+      <p>Internship maintaining campus network infrastructure, including configuration and troubleshooting of Juniper switches and firewalls.</p>
+      <div class="stack"><span>Juniper</span><span>Switching</span><span>Firewalls</span></div>
+      <a class="read-more" href="projects/network-infrastructure.html">view project →</a>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <a class="project-title-link" href="projects/municipal-it.html">Municipal IT Support — City of La Grande</a>
+        <span class="status done">completed</span>
+      </div>
+      <p>Internship through Chaves Consulting supporting municipal government IT systems and infrastructure.</p>
+      <div class="stack"><span>IT Support</span><span>Public Sector</span><span>Systems Admin</span></div>
+      <a class="read-more" href="projects/municipal-it.html">view project →</a>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <a class="project-title-link" href="projects/vuln-assessment.html">Vulnerability Assessment Lab</a>
+        <span class="status done">completed</span>
+      </div>
+      <p>Structured vulnerability scan against a lab target using Nessus, covering configuration, triage, and remediation-focused reporting.</p>
+      <div class="stack"><span>Nessus</span><span>Vulnerability Scanning</span><span>Reporting</span></div>
+      <a class="read-more" href="projects/vuln-assessment.html">view project →</a>
+    </div>
+
+    <div class="project">
+      <div class="project-head">
+        <a class="project-title-link" href="projects/security-research.html">Applied Security Research</a>
+        <span class="status done">completed</span>
+      </div>
+      <p>Two formal research papers on MFA design and common network attack vectors, written in academic (APA) format.</p>
+      <div class="stack"><span>MFA</span><span>Threat Modeling</span><span>Technical Writing</span></div>
+      <a class="read-more" href="projects/security-research.html">view project →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">03</span><h2>education &amp; trajectory</h2></div>
+
+    <div class="role-item">
+      <div class="role-when">2026</div>
+      <div class="role-body">
+        <h3>Pursuing — DoD Cyber Apprenticeship Program</h3>
+        <p>Applying via USAJobs.</p>
+      </div>
+    </div>
+
+    <div class="role-item">
+      <div class="role-when">2022 – 2026</div>
+      <div class="role-body">
+        <h3>B.S., Computer Science &amp; Cybersecurity (Dual Degree)</h3>
+        <p>Eastern Oregon University — La Grande, OR</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">04</span><h2>contact</h2></div>
+    <div class="contact-grid">
+      <div class="contact-card"><span class="label">EMAIL</span><a href="mailto:you@example.com">you@example.com</a></div>
+      <div class="contact-card"><span class="label">GITHUB</span><a href="https://github.com/tfox" target="_blank" rel="noopener">github.com/tfox</a></div>
+      <div class="contact-card"><span class="label">LINKEDIN</span><a href="#" target="_blank" rel="noopener">linkedin.com/in/yourhandle</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  built &amp; deployed via GitHub Pages — last updated 2026
+</footer>
+
+</body>
+</html>
